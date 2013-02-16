@@ -33,4 +33,5 @@
 - (void) setPort:(AMSerialPort *)newPort;
 - (void)didAddPorts:(NSNotification *)theNotification;
 - (void)didRemovePorts:(NSNotification *)theNotification;
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication;
 @end
