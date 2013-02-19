@@ -123,7 +123,16 @@
         //data being separated by a comma or semicolon. If you're doing something similar, a
         //variant of the following command is invaluable.
         
-        //NSArray *dataArray = [receivedText componentsSeparatedByString:@","];
+        NSArray *dataArray = [receivedText componentsSeparatedByString:@","];
+        if ([dataArray count] > 4) {
+            NSInteger FL = [[dataArray objectAtIndex: 0] floatValue];
+            NSInteger FR = [[dataArray objectAtIndex: 1] floatValue];
+            NSInteger BR = [[dataArray objectAtIndex: 2] floatValue];
+            NSInteger BL = [[dataArray objectAtIndex: 3] floatValue];
+            NSInteger UD = [[dataArray objectAtIndex: 4] floatValue];
+            //NSLog(@"Front Left: %ld",myInt);
+            [robotSimulation redrawRobot: FL: FR: BR: BL: UD];
+        }
         
         
         // continue listening

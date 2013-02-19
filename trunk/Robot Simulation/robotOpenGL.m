@@ -115,6 +115,8 @@
     float d = size/250;
     
     float color = size/100.0;
+    if(color < 0)
+        color*=-1;
     
     NSLog(@"d = %f",d);
     NSLog(@"color = %f",color);
