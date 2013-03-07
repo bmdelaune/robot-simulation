@@ -19,6 +19,7 @@
     IBOutlet NSButton *connectButton;
     IBOutlet NSPopUpButton *portList;
     float power;
+    IBOutlet NSPopUpButton *baudRate;
     IBOutlet NSProgressIndicator *spinner;
 }
 

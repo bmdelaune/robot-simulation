@@ -22,6 +22,14 @@
 	[AMSerialPortList sharedPortList];
 	[self listDevices];
     [statusField setStringValue:@"Idle."];
+    
+    /*NSArray *dict = [NSArray arrayWithObjects:@110,@"110",300,@"300",600,@"600",1200,@"1200",2400,@"2400",4800,@"4800",9600,@"9600",14400,@"14400",19200,@"19200",28800,@"28800",38400,@"38400",56000,@"56000",57600,@"57600",115200,@"115200", nil];*/
+    NSArray *dict = [NSArray arrayWithObjects:@"110",@"300",@"600",@"1200",@"2400",@"4800",@"9600",@"14400",@"19200",@"28800",@"38400",@"56000",@"57600",@"115200", nil];
+    [baudRate removeAllItems];
+    [baudRate addItemsWithTitles:dict];
+    [baudRate selectItemAtIndex:(NSInteger)10];
+    NSString *stringtest = @"14400";
+    NSLog(@"%i",[stringtest intValue]);
 }
 
 - (void)listDevices
@@ -85,8 +93,8 @@
             //The standard speeds defined in termios.h are listed near
             //the top of AMSerialPort.h. Those can be preceeded with a 'B' as below. However, I've had success
             //with non standard rates (such as the one for the MIDI protocol). Just omit the 'B' for those.
-			
-            [port setSpeed:B38400];
+			NSLog(@"baud rate = %i",[[baudRate titleOfSelectedItem] intValue]);
+            [port setSpeed:[[baudRate titleOfSelectedItem] intValue]];
             
             
             // listen for data in a separate thread

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57AF45CB16E004990079EE3A /* sirov.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF45CA16E004990079EE3A /* sirov.png */; };
 		57EB445816CDC934002A5EE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EB445716CDC934002A5EE4 /* Cocoa.framework */; };
 		57EB446216CDC934002A5EE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57EB446016CDC934002A5EE4 /* InfoPlist.strings */; };
 		57EB446416CDC934002A5EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB446316CDC934002A5EE4 /* main.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57AF45CA16E004990079EE3A /* sirov.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sirov.png; sourceTree = "<group>"; };
 		57EB445416CDC933002A5EE4 /* Robot Simulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robot Simulation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EB445716CDC934002A5EE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		57EB445A16CDC934002A5EE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +105,7 @@
 		57EB444B16CDC933002A5EE4 = {
 			isa = PBXGroup;
 			children = (
+				57AF45CA16E004990079EE3A /* sirov.png */,
 				57EB450016CE751D002A5EE4 /* IOKit.framework */,
 				57EB448F16CDD8FD002A5EE4 /* OpenGL.framework */,
 				57EB445D16CDC934002A5EE4 /* Robot Simulation */,
@@ -275,6 +278,7 @@
 				57EB446216CDC934002A5EE4 /* InfoPlist.strings in Resources */,
 				57EB446816CDC934002A5EE4 /* Credits.rtf in Resources */,
 				57EB446E16CDC934002A5EE4 /* MainMenu.xib in Resources */,
+				57AF45CB16E004990079EE3A /* sirov.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
